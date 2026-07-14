@@ -233,7 +233,7 @@ const PlatformContent = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full min-h-screen flex flex-col items-center justify-center pt-12 pb-[180px] md:py-20 px-4 md:px-8 select-none transition-colors duration-500 overflow-hidden relative"
+      className="w-full min-h-screen flex flex-col items-center justify-center pt-12 pb-[240px] md:py-20 px-4 md:px-8 select-none transition-colors duration-500 overflow-hidden relative"
       style={{ background: activeSlide.bg }}
     >
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between gap-4 md:gap-8 h-auto md:h-[600px] relative">
@@ -272,7 +272,7 @@ const PlatformContent = () => {
               className="w-full h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-0 lg:gap-8"
             >
               {/* Phone image */}
-              <div className="w-full lg:w-[48%] h-[260px] sm:h-[300px] lg:h-full flex items-center justify-center shrink-0">
+              <div className="w-full lg:w-[48%] h-[180px] sm:h-[220px] lg:h-full flex items-center justify-center shrink-0">
                 <img
                   src={activeSlide.image}
                   alt={activeSlide.title}
