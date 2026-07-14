@@ -28,50 +28,31 @@ body {
 
 .bizkit-hero-bg {
   isolation: isolate;
-  background: linear-gradient(90deg, #dcf8f6 0%, #cdf3ef 48%, #e9fbf9 76%, #ffffff 100%);
+  position: relative;
+  background:
+    radial-gradient(circle 500px at 50% -200px, rgba(76, 205, 204, 0.1) 0% 490px, rgba(27, 87, 87, 0.06) 500px, rgba(27, 87, 87, 0) 530px, transparent 531px),
+    radial-gradient(circle 500px at 50% -120px, #daf4f1 0% 490px, rgba(27, 87, 87, 0.06) 500px, rgba(27, 87, 87, 0) 530px, transparent 531px),
+    radial-gradient(circle 500px at 50% -40px, #daf4f1 0% 490px, rgba(27, 87, 87, 0.06) 500px, rgba(27, 87, 87, 0) 530px, transparent 531px),
+    linear-gradient(180deg, #ecfaf8 0%, #ffffff 60%);
+  overflow: hidden;
 }
 
-.bizkit-hero-bg::before,
+@media (min-width: 1024px) {
+  .bizkit-hero-bg {
+    background:
+      radial-gradient(circle 500px at -10px 50%, rgba(76, 205, 204, 0.1) 0% 490px, rgba(27, 87, 87, 0.06) 500px, rgba(27, 87, 87, 0) 530px, transparent 531px),
+      radial-gradient(circle 500px at 120px 50%, #daf4f1 0% 490px, rgba(27, 87, 87, 0.06) 500px, rgba(27, 87, 87, 0) 530px, transparent 531px),
+      radial-gradient(circle 500px at 280px 50%, #daf4f1 0% 490px, rgba(27, 87, 87, 0.06) 500px, rgba(27, 87, 87, 0) 530px, transparent 531px),
+      linear-gradient(90deg, #ecfaf8 0%, #ffffff 40%);
+  }
+}
+
 .bizkit-hero-bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
   pointer-events: none;
-}
-
-.bizkit-hero-bg::before {
-  background:
-    radial-gradient(ellipse 52% 104% at -7% 52%, rgba(255, 255, 255, 0.56) 0 30%, rgba(255, 255, 255, 0) 30.8%),
-    radial-gradient(ellipse 68% 126% at -7% 52%, rgba(255, 255, 255, 0) 0 41%, rgba(255, 255, 255, 0.48) 42% 45%, rgba(255, 255, 255, 0) 46%),
-    radial-gradient(ellipse 84% 148% at -7% 52%, rgba(255, 255, 255, 0) 0 53%, rgba(255, 255, 255, 0.34) 54% 57%, rgba(255, 255, 255, 0) 58%),
-    radial-gradient(ellipse 102% 172% at -7% 52%, rgba(255, 255, 255, 0) 0 64%, rgba(255, 255, 255, 0.23) 65% 67%, rgba(255, 255, 255, 0) 68%);
-  filter: blur(10px);
-  opacity: 0.98;
-}
-
-.bizkit-hero-bg::after {
-  background:
-    radial-gradient(ellipse 54% 58% at 48% 4%, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.76) 31%, rgba(255, 255, 255, 0) 68%),
-    linear-gradient(90deg, rgba(255, 255, 255, 0) 0 70%, rgba(255, 255, 255, 0.78) 88%, #ffffff 100%);
-  filter: blur(24px);
-}
-
-@media (max-width: 1023px) {
-  .bizkit-hero-bg {
-    background: linear-gradient(180deg, #ddf8f6 0%, #cdf3ef 58%, #ffffff 100%);
-  }
-
-  .bizkit-hero-bg::before {
-    background:
-      radial-gradient(ellipse 88% 84% at -24% 44%, rgba(255, 255, 255, 0.52) 0 36%, rgba(255, 255, 255, 0) 37%),
-      radial-gradient(ellipse 112% 102% at -24% 44%, rgba(255, 255, 255, 0) 0 48%, rgba(255, 255, 255, 0.36) 49% 52%, rgba(255, 255, 255, 0) 53%),
-      radial-gradient(ellipse 136% 120% at -24% 44%, rgba(255, 255, 255, 0) 0 59%, rgba(255, 255, 255, 0.24) 60% 62%, rgba(255, 255, 255, 0) 63%);
-    filter: blur(9px);
-  }
-
-  .bizkit-hero-bg::after {
-    background: radial-gradient(ellipse 96% 72% at 54% 0%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0) 68%);
-    filter: blur(22px);
-  }
+  z-index: 1;
 }

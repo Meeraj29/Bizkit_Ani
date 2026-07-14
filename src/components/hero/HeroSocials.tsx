@@ -9,7 +9,7 @@ const socials = [
   { href: "#", src: "/fac.svg", label: "Facebook"  },
   { href: "#", src: "/linkedin.svg", label: "LinkedIn"  },
   { href: "#", src: "/insta.svg", label: "Instagram" },
-  { href: "#", src: "/xx.svg", label: "X" },
+  { href: "#", src: "/logoX.svg", label: "X" },
 ];
 
 const HeroSocials = () => {

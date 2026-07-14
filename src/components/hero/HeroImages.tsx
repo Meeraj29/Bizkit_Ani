@@ -39,7 +39,7 @@ const HeroImages = () => {
             {doubleImages.map((src, idx) => (
               <div
                 key={idx}
-                className="relative w-full aspect-9/19.5 rounded-2xl lg:rounded-3xl shadow-lg border-[3px] border-gray-900 overflow-hidden bg-white shrink-0"
+                className="mt-5 relative w-full aspect-9/19.5 rounded-2xl lg:rounded-3xl shadow-lg border-[3px] border-gray-900 overflow-hidden bg-white shrink-0"
               >
                 <Image src={src} alt={`Mockup ${idx}`} fill className="object-cover" />
               </div>
@@ -57,7 +57,7 @@ const HeroImages = () => {
             {doubleImages.map((src, idx) => (
               <div
                 key={idx}
-                className="relative w-full aspect-9/19.5 rounded-2xl lg:rounded-3xl shadow-lg border-[3px] border-gray-900 overflow-hidden bg-white shrink-0"
+                className="mt-5 relative w-full aspect-9/19.5 rounded-2xl lg:rounded-3xl shadow-lg border-[3px] border-gray-900 overflow-hidden bg-white shrink-0"
               >
                 <Image src={src} alt={`Mockup ${idx}`} fill className="object-cover" />
               </div>
@@ -75,7 +75,7 @@ const HeroImages = () => {
             {doubleImages.map((src, idx) => (
               <div
                 key={idx}
-                className="relative w-full aspect-9/19.5 rounded-2xl lg:rounded-3xl shadow-lg border-[3px] border-gray-900 overflow-hidden bg-white shrink-0"
+                className="mt-5 relative w-full aspect-9/19.5 rounded-2xl lg:rounded-3xl shadow-lg border-[3px] border-gray-900 overflow-hidden bg-white shrink-0"
               >
                 <Image src={src} alt={`Mockup ${idx}`} fill className="object-cover" />
               </div>
